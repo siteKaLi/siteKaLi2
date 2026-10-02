@@ -1,0 +1,283 @@
+<head>
+
+<meta charset="UTF-8"> 
+ 
+ <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+ 
+ 
+ <title>انیمه نینجا</title>
+ 
+ 
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+ 
+
+body {
+ background: black;
+}
+ 
+  
+
+  
+  
+  
+  
+  
+  
+  
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+ 
+
+
+<img
+src="iams.jpg"
+style="
+width: 15%;
+margin-left: 73%;
+">
+
+
+
+
+ 
+
+
+
+<div>
+ 
+<img src="vreedout.png"
+style="
+width: 25%;
+margin-left: 60%;
+margin-top: 7%;
+">
+
+
+<button
+onclick="window.location.href='index.html'"
+style="
+margin-left: 65%;
+margin-top: -13%;
+width: 15%;
+font-size: 500%;
+background: transparent;
+border: none;
+color: transparent;
+">link</button>
+ 
+ 
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+<div 
+style="
+position:relative;
+margin-left: 8%;
+">
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  <img 
+  src="real.png"
+  style="
+  width:89%;
+  margin-left: -4%;
+  ">
+  
+  
+  
+  
+  
+  <form id="form">
+  
+  
+  
+  
+  
+  <input
+  type="text"
+  name="name"
+  placeholder="نام دلخواه"
+  required
+  style="
+  position:absolute;
+  top: 980px;
+  left:1%;
+  font-size: 405%;
+  width: 69%;
+  text-align: right;
+  outline: none;
+  border: none;
+  color: white;
+  background: transparent;
+  ">
+  
+  
+  
+  
+  
+  
+  
+  
+  
+   <input
+   type="text"
+  placeholder="رمز عبور دلخواه"
+  required
+  style="
+  position:absolute;
+  top: 1290px;
+  left:1%;
+  font-size: 405%;
+  width: 69%;
+  text-align: right;
+  outline: none;
+  border: none;
+  color: white;
+  background: transparent;
+  "> 
+  
+ 
+ 
+ 
+   <input 
+   name="message"
+   type="tel"
+  placeholder="شماره تلفن همراه"
+  required
+  style="
+  position:absolute;
+  top: 1600px;
+  left:1%;
+  font-size: 405%;
+  width: 69%;
+  text-align: right;
+  outline: none;
+  border: none;
+  color: white;
+  background: transparent;
+  ">
+ 
+
+
+
+
+
+<button
+type="submit"
+style="
+margin-left: 6%;
+margin-top: 6%;
+font-size: 400%;
+background: transparent;
+border: none;
+color: transparent;
+width:69%;
+">ارسال</button>
+ 
+  
+  
+</div>
+
+
+  
+ </form> 
+  
+  
+  
+<img src="lor.png"
+style="
+margin-left: 10%;
+margin-top: -14%;
+width: 70%;
+">
+  
+  
+  
+  
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+ 
+emailjs.init({
+  publicKey: "H3PsRLpwrVTHKG3ww"
+});
+
+
+document.getElementById("form").addEventListener("submit", function(event) {
+
+  event.preventDefault();
+
+  emailjs.sendForm(
+    "service_z4wahxm",
+    "template_gnyhsze",
+    this
+  ) 
+  
+  
+});
+ 
+ </script>
